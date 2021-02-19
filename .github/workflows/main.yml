@@ -1,7 +1,5 @@
 name: example
-on: 
-  - push
-  - fetch
+on:  push
 jobs:
   greeting:
     runs-on: ubuntu-latest
