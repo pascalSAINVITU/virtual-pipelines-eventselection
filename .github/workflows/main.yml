@@ -49,7 +49,7 @@ jobs:
          name: skim6.18.04
 
       - name: access control
-        run: printf ${{ secrets.USER_PASS }} | base64 -d | kinit ${{ secrets.USER_NAME }}@CERN.CH
+        run: printf ${{ secrets.USER_PASS }} | kinit ${{ secrets.USER_NAME }}@CERN.CH
 
       - name: skim
         run: |
